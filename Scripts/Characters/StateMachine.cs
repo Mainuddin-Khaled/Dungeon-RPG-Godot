@@ -11,4 +11,22 @@ public partial class StateMachine : Node
         currentSate.Notification(5001);
     }
 
+    public void SwitchState<T>()
+    {
+        Node newState = null;
+
+        foreach (Node state in states)
+        {
+            if (state is T)
+            {
+                newState = state;
+            }
+        }
+        if (newState == null)
+        {
+            return;
+        }
+        currentSate = newState;
+        currentSate.Notification(5001);
+    }
 }

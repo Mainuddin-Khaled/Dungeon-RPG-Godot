@@ -91,10 +91,11 @@ _data = {
 &"Run": SubResource("Animation_n0rfk")
 }
 
-[node name="Player" type="CharacterBody3D" unique_id=825277381 node_paths=PackedStringArray("animationPlayer", "sprite3D")]
+[node name="Player" type="CharacterBody3D" unique_id=825277381 node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachineNode")]
 script = ExtResource("1_eiaiy")
 animationPlayer = NodePath("AnimationPlayer")
 sprite3D = NodePath("Sprite3D")
+stateMachineNode = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=901973458]
 texture_filter = 0
