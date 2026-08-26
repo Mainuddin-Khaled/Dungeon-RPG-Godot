@@ -21,13 +21,13 @@ public partial class PlayerIdleState : PlayerState
     // public override void _Notification(int what)
     // {
     //     base._Notification(what);
-    //     if (what == 5001)
+    //     if (what == GameConstants.NOTIFICATION_ENTER_STATE)
     //     {
     //         characterNode.animationPlayer.Play(GameConstants.ANIMATION_IDLE);
     //         SetPhysicsProcess(true);
     //         SetProcessInput(true);
     //     }
-    //     else if (what == 5002)
+    //     else if (what == GameConstants.NOTIFICATION_EXIT_STATE)
     //     {
     //         SetPhysicsProcess(false);
     //         SetProcessInput(false);

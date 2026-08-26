@@ -4,9 +4,9 @@ using System;
 public partial class Player : CharacterBody3D
 {
     [ExportGroup("Required Nodes")]
-    [Export] public AnimationPlayer animationPlayer;
-    [Export] public Sprite3D sprite3D;
-    [Export] public StateMachine stateMachineNode;
+    [Export] public AnimationPlayer animationPlayer { get; private set; }
+    [Export] public Sprite3D sprite3D { get; private set; }
+    [Export] public StateMachine stateMachineNode { get; private set; }
     public Vector2 direction = new();
 
     // public override void _PhysicsProcess(double delta)
