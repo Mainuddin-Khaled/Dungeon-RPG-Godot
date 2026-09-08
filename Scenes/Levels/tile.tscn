@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://isdjw2x8d8yl"]
+
+[ext_resource type="PackedScene" uid="uid://75vjv1lmetsv" path="res://Assets/Models/Dungeon/gltf/floor_tile_small.gltf.glb" id="1_rnkiu"]
+[ext_resource type="PackedScene" uid="uid://cqqrh8ufbxanm" path="res://Assets/Models/Dungeon/gltf/wall.gltf.glb" id="2_6w3xb"]
+[ext_resource type="PackedScene" uid="uid://b6u6webqeph05" path="res://Assets/Models/Dungeon/gltf/stairs_wood_decorated.gltf.glb" id="3_tg8tl"]
+[ext_resource type="PackedScene" uid="uid://sl4uf7bltdp1" path="res://Assets/Models/Dungeon/gltf/wall_corner.gltf.glb" id="4_iwyx5"]
+[ext_resource type="PackedScene" uid="uid://djthi8rcs4t74" path="res://Assets/Models/Dungeon/gltf/wall_Tsplit.gltf.glb" id="5_usmro"]
+[ext_resource type="PackedScene" uid="uid://b5xxad2deski8" path="res://Assets/Models/Dungeon/gltf/wall_open_scaffold.gltf.glb" id="6_hfoto"]
+[ext_resource type="PackedScene" uid="uid://bkfucwybe6xof" path="res://Assets/Models/Dungeon/gltf/wall_doorway_scaffold.glb" id="7_87b10"]
+
+[node name="Tiles" type="Node3D" unique_id=1254021321]
+
+[node name="floor_tile_small_gltf" parent="." unique_id=500438602 instance=ExtResource("1_rnkiu")]
+
+[node name="wall_gltf" parent="." unique_id=2050581710 instance=ExtResource("2_6w3xb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 0, 0)
+
+[node name="stairs_wood_decorated_gltf" parent="." unique_id=1530533614 instance=ExtResource("3_tg8tl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="wall_corner_gltf" parent="." unique_id=195031507 instance=ExtResource("4_iwyx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="wall_Tsplit_gltf" parent="." unique_id=743749323 instance=ExtResource("5_usmro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="wall_open_scaffold_gltf" parent="." unique_id=544026286 instance=ExtResource("6_hfoto")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="wall_doorway_scaffold2" parent="." unique_id=379770355 instance=ExtResource("7_87b10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)

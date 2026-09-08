@@ -115,13 +115,18 @@ _data = {
 &"Run": SubResource("Animation_n0rfk")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xrivr"]
+height = 1.5
+
 [node name="Player" type="CharacterBody3D" unique_id=825277381 node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachineNode")]
+collision_layer = 2
 script = ExtResource("1_eiaiy")
 animationPlayer = NodePath("AnimationPlayer")
 sprite3D = NodePath("Sprite3D")
 stateMachineNode = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=901973458]
+pixel_size = 0.0025
 texture_filter = 0
 texture = ExtResource("1_46w32")
 
@@ -146,3 +151,7 @@ dashTimerNode = NodePath("Timer")
 [node name="Timer" type="Timer" parent="StateMachine/DashState" unique_id=1180777777]
 wait_time = 0.4
 one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1286571926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CapsuleShape3D_xrivr")
